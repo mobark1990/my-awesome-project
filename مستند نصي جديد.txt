@@ -1,0 +1,13 @@
+my-awesome-project
+├── css
+│   ├── styles.css
+├── js
+│   ├── main.js
+│   ├── reports.js
+│   ├── settings.js
+│   ├── transferredData.js
+├── index.html
+├── report.html
+├── settings.html
+├── transferredData.html
+└── README.md

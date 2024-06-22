@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="settings.html">الإعدادات</a></li>
+            <li><a href="report.html">التقارير</a></li>
+            <li><a href="transferredData.html">البيانات المرحلة</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>الصفحة الرئيسية</h1>
+        <form id="main-form">
+            <div class="form-group">
+                <label for="branch-name">اسم الفرع:</label>
+                <input type="text" id="branch-name" name="branch-name">
+            </div>
+            <div class="form-group">
+                <label for="cash">كاش:</label>
+                <input type="number" id="cash" name="cash">
+            </div>
+            <div class="form-group">
+                <label for="network">شبكة:</label>
+                <input type="number" id="network" name="network">
+            </div>
+            <div class="form-group">
+                <label for="expenses">مصروفات:</label>
+                <input type="number" id="expenses" name="expenses">
+            </div>
+            <div class="form-group">
+                <label for="note">الملاحظة:</label>
+                <textarea id="note" name="note"></textarea>
+            </div>
+            <div class="items">
+                <h2>الأصناف</h2>
+                <div class="item">
+                    <label>حاشي</label>
+                    <input type="number" id="quantity-hashi" placeholder="الكمية">
+                    <input type="number" id="buyPrice-hashi" placeholder="تكلفة الشراء">
+                    <input type="number" id="salePrice-hashi" placeholder="سعر البيع" readonly ondblclick="this.readOnly='';" onblur="this.readOnly=true;">
+                </div>
+                <div class="item">
+                    <label>غنم</label>
+                    <input type="number" id="quantity-ghanam" placeholder="الكمية">
+                    <input type="number" id="buyPrice-ghanam" placeholder="تكلفة الشراء">
+                    <input type="number" id="salePrice-ghanam" placeholder="سعر البيع" readonly ondblclick="this.readOnly='';" onblur="this.readOnly=true;">
+                </div>
+                <!-- أضف المزيد من الأصناف هنا -->
+            </div>
+            <button type="submit">نقل البيانات</button>
+            <button type="button" onclick="clearFields()">مسح الحقول</button>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

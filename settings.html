@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإعدادات</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="settings.html">الإعدادات</a></li>
+            <li><a href="report.html">التقارير</a></li>
+            <li><a href="transferredData.html">البيانات المرحلة</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>الإعدادات</h1>
+        <section>
+            <h2>سحب رواتب العمال</h2>
+            <form id="payroll-form">
+                <div class="form-group">
+                    <label for="employee-name">اسم العامل:</label>
+                    <input type="text" id="employee-name" name="employee-name">
+                </div>
+                <div class="form-group">
+                    <label for="salary">الراتب:</label>
+                    <input type="number" id="salary" name="salary">
+                </div>
+                <button type="submit">سحب الراتب</button>
+            </form>
+        </section>
+        <section>
+            <h2>مذكرة تسليم أو استلام صنف</h2>
+            <form id="delivery-form">
+                <div class="form-group">
+                    <label for="transaction-type">نوع العملية:</label>
+                    <select id="transaction-type" name="transaction-type">
+                        <option value="تسليم">تسليم</option>
+                        <option value="استلام">استلام</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="item">الصنف:</label>
+                    <select id="item" name="item">
+                        <option value="حاشي">حاشي</option>
+                        <option value="غنم">غنم</option>
+                        <option value="نعيمي">نعيمي</option>
+                        <option value="حري">حري</option>
+                        <option value="عجل">عجل</option>
+                        <option value="رضيع">رضيع</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">الكمية:</label>
+                    <input type="number" id="quantity" name="quantity">
+                </div>
+                <div class="form-group">
+                    <label for="receiver-name">اسم المستلم:</label>
+                    <input type="text" id="receiver-name" name="receiver-name">
+                </div>
+                <button type="submit">إرسال المذكرة</button>
+            </form>
+        </section>
+    </div>
+    <script src="js/settings.js"></script>
+</body>
+</html>
